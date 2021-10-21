@@ -5,7 +5,10 @@
     <Company>Eppical</Company>
     <Authors>Eppical Devs</Authors>
     <PackageId>Eppical.ToolBox.Web.ApiResult</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
+    <PackageProjectUrl>https://github.com/diejfer/Eppical.ToolBox.Web</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/diejfer/Eppical.ToolBox.Web</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
   <ItemGroup>
