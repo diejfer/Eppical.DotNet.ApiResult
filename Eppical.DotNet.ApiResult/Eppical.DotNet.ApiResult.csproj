@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Eppical Devs</Authors>
+    <Company>Eppical</Company>
+    <Product>Generic solution</Product>
+    <Description>Generic solution for error handling in web api</Description>
+    <RepositoryUrl>https://github.com/diejfer/Eppical.DotNet.ApiResult</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/diejfer/Eppical.DotNet.ApiResult</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

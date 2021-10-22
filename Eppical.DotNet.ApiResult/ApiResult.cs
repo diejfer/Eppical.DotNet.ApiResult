@@ -1,10 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net;
-using System.Text;
 using System.Text.Json.Serialization;
 
-namespace Eppical.ToolBox.Web
+namespace Eppical.DotNet.ApiResult
 {
     public class ApiResult<T> where T : class
     {
@@ -36,22 +34,10 @@ namespace Eppical.ToolBox.Web
             Data = data;
         }
 
-        //public ApiResult(string error)
-        //{
-        //    AddError(error);
-        //}
-
-        public ApiResult(Exception ex) // : this("Server error.")
+        public ApiResult(Exception ex)
         {
             AddError(ex.Message);
-
-            //HttpCode = (int)HttpStatusCode.InternalServerError;
-            //Code = 500;
         }
-
-
-
-
 
         public void AddError(string Field, string Message)
         {
@@ -61,30 +47,6 @@ namespace Eppical.ToolBox.Web
             Error.FieldErrors.Add(new FieldError() { Field = Field, Error = Message });
         }
 
-
-
-
-
-
-
-
-
     }
 
-    public class ApiError
-    {
-
-        public ApiError()
-        {
-            FieldErrors = new List<FieldError>();
-        }
-        public string GeneralMessage { get; set; }
-        public List<FieldError> FieldErrors { get; set; }
-    }
-
-    public class FieldError
-    {
-        public string Field { get; set; }
-        public string Error { get; set; }
-    }
 }

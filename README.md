@@ -1,2 +1,2 @@
-# Eppical.ToolBox.Web
-Toolbox for Eppical web developers
+# Eppical.DotNet.ApiResult
+Generic solution for error handling in web api

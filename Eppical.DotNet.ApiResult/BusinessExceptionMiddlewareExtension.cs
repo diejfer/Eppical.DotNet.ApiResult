@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Eppical.ToolBox.Web.Extension
+namespace Eppical.DotNet.ApiResult
 {
     public static class BusinessExceptionMiddlewareExtension
     {
@@ -12,4 +9,5 @@ namespace Eppical.ToolBox.Web.Extension
             app.UseMiddleware<BusinessExceptionMiddleware>();
         }
     }
+
 }

@@ -7,7 +7,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 
-namespace Eppical.ToolBox.Web
+namespace Eppical.DotNet.ApiResult
 {
     public class BusinessExceptionMiddleware
     {
@@ -63,9 +63,8 @@ namespace Eppical.ToolBox.Web
             }
             context.Response.ContentType = "application/json";
 
-
-
             await context.Response.WriteAsync(JsonSerializer.Serialize(apiResult));
         }
     }
+
 }

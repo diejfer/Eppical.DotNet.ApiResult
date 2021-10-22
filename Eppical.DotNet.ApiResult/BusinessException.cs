@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Net;
+using System.Text;
 
-namespace Eppical.ToolBox.Web
+namespace Eppical.DotNet.ApiResult
 {
     [Serializable]
     public class BusinessException : Exception
@@ -32,4 +33,5 @@ namespace Eppical.ToolBox.Web
           System.Runtime.Serialization.SerializationInfo info,
           System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
     }
+
 }
